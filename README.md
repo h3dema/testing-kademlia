@@ -2,7 +2,7 @@
 
 Install and run
 ```bash
-docker build -t /kademlia github.com/h3dema/kademlia.docker
+docker build -t kademlia github.com/h3dema/testing-kademlia
 docker run -w /kademlia -it kademlia
 ```
 
