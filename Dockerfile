@@ -26,6 +26,7 @@ COPY config /root/.ssh/config
 RUN cd /root/.ssh/ && \
     cp id_rsa.pub authorized_keys && \
     chmod 600 *
+COPY populate.py /kademlia/populate.py
 
 EXPOSE 8468
 CMD /etc/init.d/ssh start && /bin/bash
